@@ -1,6 +1,6 @@
 <template>
     <div>
-        <canvas id="myChart" width="400" height="400"></canvas>
+        <canvas id="barChart" width="400" height="400"></canvas>
     </div>
 </template>
 
@@ -9,8 +9,8 @@ import Chart from 'chart.js';
 
 export default {
  mounted() {
-    const ctx = document.getElementById('myChart');
-    const myChart = new Chart(ctx, { // eslint-disable-line no-unused-varss
+    const ctx = document.getElementById('barChart');
+    const chart = new Chart(ctx, { // eslint-disable-line no-unused-varss
     type: 'bar',
     data: {
         labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
