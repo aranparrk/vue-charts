@@ -5,13 +5,13 @@
 </template>
 
 <script>
-import Chart from 'chart.js';
+// import Chart from 'chart.js';
 
 export default {
  mounted() {
     // const ctx = document.getElementById('barChart');
     
-    const chart = new Chart(this.$refs.barChart, { // eslint-disable-line no-unused-varss
+    const chart = new this.$_Chart(this.$refs.barChart, { // eslint-disable-line no-unused-varss
     type: 'bar',
     data: {
         labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
